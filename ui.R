@@ -4,6 +4,8 @@ if (!require("markdown")) install.packages("markdown")
 require(markdown)
 if (!require("shinythemes")) install.packages("shinythemes")
 require(shinythemes)
+if (!require("plotly")) install.packages("plotly")
+require(plotly)
 
 
 library(shiny)
@@ -53,7 +55,7 @@ shinyUI(navbarPage(
                #TAB 1----
                tabPanel("Alarms",
                         
-                        plotOutput("plot.alarms.svala")
+                        plotlyOutput("plot.alarms.svala")
                         # h4("Table"),
                         # h1("Header 1"),
                         # h2("Header 2"),
